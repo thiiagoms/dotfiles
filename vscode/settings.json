@@ -1,0 +1,31 @@
+{
+	"settings": {
+		// vscode colors 
+		"editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
+		"editor.fontLigatures": true,
+		"editor.fontSize": 15,
+		"files.associations": {
+			"*.module": "php"
+		},
+		"workbench.colorTheme": "Monokai Pro",
+		"workbench.iconTheme": "Monokai Pro Icons",
+		"workbench.statusBar.visible": true,
+		"workbench.colorCustomizations": {
+			"activityBar.activeBorder": "#d6e8e0",
+			"activityBar.background": "#af9471",
+			"activityBar.foreground": "#15202b",
+			"activityBar.inactiveForeground": "#15202b99",
+			"activityBarBadge.background": "#d6e8e0",
+			"activityBarBadge.foreground": "#15202b",
+			"statusBar.background": "#987b55",
+			"statusBarItem.hoverBackground": "#af9471",
+			"titleBar.activeBackground": "#987b55",
+			"titleBar.activeForeground": "#e7e7e7",
+			"titleBar.inactiveBackground": "#987b5599",
+			"titleBar.inactiveForeground": "#e7e7e799",
+			"activityBar.activeBackground": "#af9471",
+			"statusBar.foreground": "#e7e7e7"
+		},
+		"peacock.remoteColor": "#987b55",
+	}
+}
