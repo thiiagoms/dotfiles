@@ -1,8 +1,6 @@
 {
 	"settings": {
-		// vscode colors 
 		"editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
-		"editor.fontLigatures": true,
 		"editor.fontSize": 15,
 		"files.associations": {
 			"*.module": "php"
