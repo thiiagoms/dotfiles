@@ -17,6 +17,10 @@ echo -e "[*] Setup discord \n"
 wget "https://discord.com/api/download?platform=linux&format=deb" -O discord.deb
 sudo dpkg -i discord.deb
 
+echo -e "[*] Install DBeaver \n"
+wget https://dbeaver.io/files/dbeaver-ce_latest_amd64.deb -O dbeaver.deb
+sudo dpkg -i dbeaver.deb
+
 echo -e "[*] Setup spotify \n"
 curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add - 
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
