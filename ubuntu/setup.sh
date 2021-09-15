@@ -21,25 +21,17 @@ echo -e "[*] Install DBeaver \n"
 wget https://dbeaver.io/files/dbeaver-ce_latest_amd64.deb -O dbeaver.deb
 sudo dpkg -i dbeaver.deb
 
-echo -e "[*] Setup spotify \n"
-curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add - 
-echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
-
 echo -e "[*] Update and upgrade packages \n" 
-sudo apt update -y && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt install -f -y 
+sudo apt update -y && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt install -f -y && sudo apt sudo apt --fix-broken install -y 
 
 echo -e "[*] Install tools: Docker, Git, Razer, VSCode \n"
-sudo apt install docker docker-compose git \
-  openrazer-meta polychromatic terminator \
-	telegram-desktop ubuntu-restricted-extras \
-	software-properties-common apt-transport-https sublime-text \
-  zsh bat pipenv spotify-client flameshot virtualbox -y 
+sudo apt install docker docker-compose git openrazer-meta polychromatic terminator telegram-desktop ubuntu-restricted-extras software-properties-common apt-transport-https sublime-text zsh bat pipenv curl flameshot virtualbox -y 
 
 echo -e "[*] Add user to docker "
 sudo usermod -aG docker $USER
 
 echo -e "[*] Add user to plugdev"
-sudo gpasswd -a plugdev $USER
+sudo gpasswd -a $USER plugdev 
 
 echo -e "[*] Change to zsh"
 chsh -s /bin/zsh
@@ -58,4 +50,4 @@ echo -e "[*] Clean"
 rm -rf *.deb
 
 echo -e "[*] reboot"
-# sudo reboot
+sudo reboot
