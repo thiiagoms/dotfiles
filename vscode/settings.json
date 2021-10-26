@@ -10,21 +10,15 @@
     "workbench.statusBar.visible": true,
     "workbench.colorCustomizations": {
         "activityBar.activeBorder": "#d6e8e0",
-        "activityBar.background": "#af9471",
+        "activityBar.background":  "#7be886",// "#74e880",
         "activityBar.foreground": "#15202b",
         "activityBar.inactiveForeground": "#15202b99",
         "activityBarBadge.background": "#d6e8e0",
         "activityBarBadge.foreground": "#15202b",
-        "statusBar.background": "#987b55",
-        "statusBarItem.hoverBackground": "#af9471",
-        "titleBar.activeBackground": "#987b55",
+        "statusBar.background": "#976ae6", 
         "titleBar.activeForeground": "#e7e7e7",
-        "titleBar.inactiveBackground": "#987b5599",
-        "titleBar.inactiveForeground": "#e7e7e799",
-        "activityBar.activeBackground": "#af9471",
+        "activityBar.activeBackground": "#baf5ca",
         "statusBar.foreground": "#e7e7e7"
     },
-    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
-    "security.workspace.trust.untrustedFiles": "open",
-    "workbench.iconTheme": "material-icon-theme"
+    "security.workspace.trust.untrustedFiles": "open"
 }
