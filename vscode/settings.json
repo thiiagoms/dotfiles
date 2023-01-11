@@ -1,24 +1,44 @@
 {
-    "editor.fontFamily": "'JetBrains Mono', 'Font Awesome 5 Brands', 'Font Awesome 5 Free', 'Font Awesome 5 Free Solid'",
+    "editor.cursorBlinking": "expand",
+    "editor.cursorWidth": 2,
+    "editor.fontFamily": "MesloLGM Nerd Font",
     "editor.fontSize": 16,
+    "editor.renderWhitespace": "all", 
+    "editor.lineHeight": 30,
+    "editor.letterSpacing": 0.5,
+    "editor.rulers": [
+        120
+    ],
     "editor.wordWrap": "on",
     "files.associations": {
         "*.module": "php"
     },
-    "terminal.integrated.fontFamily": "Fira Code",
-    "terminal.integrated.fontSize": 15,
-    "workbench.statusBar.visible": true,
-    "workbench.colorCustomizations": {
-        "activityBar.activeBorder": "#d6e8e0",
-        "activityBar.background":  "#7be886",// "#74e880",
-        "activityBar.foreground": "#15202b",
-        "activityBar.inactiveForeground": "#15202b99",
-        "activityBarBadge.background": "#d6e8e0",
-        "activityBarBadge.foreground": "#15202b",
-        "statusBar.background": "#976ae6", 
-        "titleBar.activeForeground": "#e7e7e7",
-        "activityBar.activeBackground": "#baf5ca",
-        "statusBar.foreground": "#e7e7e7"
+    "php.suggest.basic": false,
+    "[php]": {
+        "editor.defaultFormatter": "junstyle.php-cs-fixer"
     },
-    "security.workspace.trust.untrustedFiles": "open"
+    "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+    "php-cs-fixer.onsave": true,
+    "php-cs-fixer.rules": "@PSR12",
+    "php-cs-fixer.config": ".php-cs-fixer.php;.php-cs-fixer.dist.php;.php_cs;.php_cs.dist",
+    "php-cs-fixer.allowRisky": false,
+    "php-cs-fixer.pathMode": "override",
+    "php-cs-fixer.exclude": [],
+    "php-cs-fixer.autoFixByBracket": true,
+    "php-cs-fixer.autoFixBySemicolon": false,
+    "php-cs-fixer.formatHtml": false,
+    "php-cs-fixer.documentFormattingProvider": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
+    "terminal.integrated.fontSize": 15,
+    "workbench.iconTheme": "vscode-icons",
+    "php-cs-fixer.lastDownload": 1673352519021,
+    "workbench.productIconTheme": "fluent-icons",
+    "vs-kubernetes": {
+        "vscode-kubernetes.kubectl-path.linux": "/home/thiiagoms/.local/state/vs-kubernetes/tools/kubectl/kubectl",
+        "vscode-kubernetes.minikube-path.linux": "/home/thiiagoms/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube",
+        "vscode-kubernetes.helm-path.linux": "/home/thiiagoms/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm"
+    },
+    "redhat.telemetry.enabled": false,
+    "workbench.colorTheme": "Tokyo Night",
 }
