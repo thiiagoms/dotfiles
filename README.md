@@ -1,47 +1,47 @@
-<p align="center">
-  <a href="https://github.com/thiiagoms/dotfiles">
-    <img src="assets/craft.png" alt="Logo" width="80" height="80">
-  </a>
-    <h3 align="center">My personal dotfiles config :hammer:</h3>
-    <br>
-    <p align="center">
-      <img src="https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white">
-      <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white">
-    </p>
-</p>
+# thiiagoms/dotfiles
 
-My personal post installation on ubuntu. Install tools like, VSCode, DBeaver, Docker, terminator and set configs.
+Linux workstation dotfiles and bootstrap scripts for development, containers, editors, terminal tools, and window-manager workflows.
 
-- [Dependencies](#Dependencies)
-- [Use](#Use)
+## Overview
 
-### Dependencies :hammer:
-- Bash/Zsh
-### Use :package:
+This repository keeps the setup for a fresh Linux machine in one place. It includes:
 
-01 - Clone:
+- A cross-distro package installer
+- Terminal and shell configuration
+- System info and visual terminal tooling
+- i3, picom, conky, and related desktop configuration
+- VS Code user settings
+
+On Arch-based systems, desktop applications are installed from the AUR when `yay` or `paru` is available. On Debian/Ubuntu, Fedora, and openSUSE, desktop applications are installed through Flatpak and Flathub where native package names are inconsistent.
+
+## Usage
+
+Clone the repository:
+
 ```bash
-$ git clone https://github.com/thiiagoms/dotfiles
+git clone https://github.com/thiiagoms/dotfiles
+cd dotfiles
 ```
 
-02 - Change to `dotfiles` directory:
+Run the installer:
+
 ```bash
-$ cd dotfiles 
-dotfiles $
+./install-packages.sh
 ```
 
-03 - Execute `arch.sh` for Arch Linux / Manjaro distro
+The script detects the system base from `/etc/os-release` when possible. It still asks for confirmation before installing packages.
+
+## Apply Configs
+
+Copy only the configs you want to use:
+
 ```bash
-$ ./arch.sh
-
-
- █████╗ ██████╗  ██████╗██╗  ██╗
-██╔══██╗██╔══██╗██╔════╝██║  ██║
-███████║██████╔╝██║     ███████║
-██╔══██║██╔══██╗██║     ██╔══██║
-██║  ██║██║  ██║╚██████╗██║  ██║
-╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝
-
-  [*] Author: Thiago Silva AKA thiiagoms
-  [*] E-mail: thiagom.devsec@gmail.com
+mkdir -p ~/.config
+cp -R config/terminator ~/.config/
+cp -R config/fastfetch ~/.config/
+cp -R config/i3 ~/.config/
+cp -R config/picom ~/.config/
+cp config/starship.toml ~/.config/
 ```
+
+VS Code settings can be copied into the VS Code user settings location for your platform.
